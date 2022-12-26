@@ -17,9 +17,12 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9F0D24CD-D50A-4A92-BD6F-829912F95271}"
 	ProjectSection(SolutionItems) = preProject
 		LICENSE = LICENSE
+		.github\workflows\main.yml = .github\workflows\main.yml
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rakis.Args.UnitTests", "Rakis.Args.UnitTests\Rakis.Args.UnitTests.csproj", "{63A52038-4580-4A62-9C82-780964D23CF0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rakis.Args.UnitTests", "Rakis.Args.UnitTests\Rakis.Args.UnitTests.csproj", "{63A52038-4580-4A62-9C82-780964D23CF0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rakis.Settings.UnitTests", "Rakis.Settings.UnitTests\Rakis.Settings.UnitTests.csproj", "{7E46ACA5-1D4B-4F3E-80E7-5818BDA2897B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,11 +50,13 @@ Global
 		{63A52038-4580-4A62-9C82-780964D23CF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63A52038-4580-4A62-9C82-780964D23CF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63A52038-4580-4A62-9C82-780964D23CF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E46ACA5-1D4B-4F3E-80E7-5818BDA2897B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E46ACA5-1D4B-4F3E-80E7-5818BDA2897B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E46ACA5-1D4B-4F3E-80E7-5818BDA2897B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E46ACA5-1D4B-4F3E-80E7-5818BDA2897B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7A947E09-8A3E-4A22-A038-9D7CFCCA08F7}
