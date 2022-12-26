@@ -1,5 +1,5 @@
 ﻿/*
- * Copyright (c) 2021. Bert Laverman
+ * Copyright (c) 2021, 2022. Bert Laverman
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,17 +19,14 @@ using Newtonsoft.Json.Linq;
 using Rakis.Logging;
 using Rakis.Settings.Dictionary;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Text.Json;
-using System.Text.Json.Serialization;
 
 namespace Rakis.Settings.Files
 {
 
     public class JsonFileSettings : DictionarySettings
     {
-        private readonly static Logger log = Logger.GetLogger(typeof(JsonFileSettings));
+        private readonly static ILogger log = Logger.GetLogger(typeof(JsonFileSettings));
 
         public SettingsType Type { get; init; }
         public Context Context { get; init; }

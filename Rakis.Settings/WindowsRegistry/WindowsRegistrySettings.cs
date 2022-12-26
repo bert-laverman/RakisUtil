@@ -23,7 +23,7 @@ namespace Rakis.Settings.WindowsRegistry
     public class WindowsRegistrySettings : WindowsRegistryKey
     {
 
-        private static readonly Logger log = Logger.GetLogger(typeof(WindowsRegistrySettings));
+        private static readonly ILogger log = Logger.GetLogger(typeof(WindowsRegistrySettings));
 
         private const string HKLM_BASE = "HKEY_LOCAL_MACHINE\\SOFTWARE";
         private const string HKCU_BASE = "HKEY_CURRENT_USER\\Software";

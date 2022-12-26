@@ -1,5 +1,5 @@
 ﻿/*
- * Copyright (c) 2021. Bert Laverman
+ * Copyright (c) 2021, 2022. Bert Laverman
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -25,7 +25,7 @@ namespace Rakis.Settings
     public class SettingsDir
     {
 
-        private static readonly Logger log = Logger.GetLogger(typeof(SettingsDir));
+        private static readonly ILogger log = Logger.GetLogger(typeof(SettingsDir));
 
         public Context Context { get; set; }
         public SettingsType Type { get; set; }

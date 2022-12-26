@@ -1,9 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0-windows</TargetFramework>
-    <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>Rakis.Settings.pfx</AssemblyOriginatorKeyFile>
+    <TargetFramework>net6.0-windows</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Bert Laverman</Authors>
     <Company>Rakis Software</Company>
@@ -17,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Rakis.Logger\Rakis.Logging.csproj" />
+    <ProjectReference Include="..\Rakis.Logging\Rakis.Logging.csproj" />
   </ItemGroup>
 
   <ItemGroup>
