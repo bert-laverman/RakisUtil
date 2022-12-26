@@ -1,13 +1,7 @@
-name: "RakisUtil build"
+name: "RakisUtil Push to NUGet repository"
 
-on:
-  push:
-    branches:
-    - main
-  pull_request:
-    branches:
-    - main
-    
+on: [workflow_dispatch]
+
 jobs:
   build:
 
@@ -32,3 +26,6 @@ jobs:
 
     - name: Run tests
       run: dotnet test /p:Configuration=Release --no-restore --no-build --verbosity normal
+      
+    - name: Publish
+      run: nuget push **\*.nupkg -Source 'https://api.nuget.org/v3/index.json' -ApiKey ${{secrets.NUGET_API_KEY}}
